@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #222435;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+h1{
+    font-weight: 900;
+    color: #7d83b9;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 60px;
+    margin: 30px auto;
+    margin-bottom: 60px;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #2d3046;
+    border: none;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+button.add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #363b65;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    height: 61px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button.add:hover {
+    color: white;
+    background-color: #363f88;
+}
+
+.listaTarefas {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #363b65;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item span {
+    text-align: start;
+    width: 100%;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 25px;
+}
+
+.item:hover {
+    background-color: #151627;
+}
+
+.item.completo {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #1e1f2e;
+    opacity: 0.8;
+}
+
+.item.completo span {
+    text-align: start;
+    width: 100%;
+    color: #4d506e;
+    margin-right: 10px;
+    padding: 10px 25px;
+    text-decoration: line-through;
+}
+
+button.del {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    color: #4d506e;
+}
+
+button.del:hover {
+    background: #ff004c;
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+button.deleteAll{
+    margin-top: 30px;
+    border: 1px solid #ff004c;
+    background: none;
+    padding: 15px;
+    color: #ff004c;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.deleteAll:hover {
+    background-color: #ff004c;
+    color: white;
+}
+
+.icone-lista {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    form {
+        width: 100%;
+    }
+    .listaTarefas {
+        width: 100%;
+    }
+}
